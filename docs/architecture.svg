@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="870" viewBox="0 0 1360 870" role="img" aria-labelledby="title description">
+  <title id="title">Morphé: a correction becomes a reusable rule</title>
+  <desc id="description">Text enters a local grammar or optional language model, producing a validated scene plan. A procedural motion engine applies symbolic memory. StykAnimate inverse kinematics solves limb targets and an SVG scene renders the result. A user correction returns to browser-local memory. The same rule is supported by two rig adapters; no neural model is trained.</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d5d5cb" opacity=".42"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#646b60" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="teal-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#2d7165" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>
+      text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#242b26}
+      .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.4px}
+      .label{font-size:12px;font-weight:700;letter-spacing:1.8px;fill:#6e786c}
+      .node-title{font-size:26px;font-weight:600;letter-spacing:-.7px}
+      .body{font-size:16px;fill:#64705f}
+      .mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:14px;fill:#446356}
+      .line{fill:none;stroke:#7c8578;stroke-width:1.6;marker-end:url(#arrow)}
+      .card{fill:#fffefa;stroke:#dcded3;stroke-width:1.4}
+    </style>
+  </defs>
+  <rect width="1360" height="870" rx="24" fill="#f3f3eb"/>
+  <rect x="1" y="1" width="1358" height="868" rx="23" fill="url(#grid)" stroke="#dcdfd4"/>
+  <path d="M64 62h20l9-15 9 30 9-15h20" fill="none" stroke="#2d7165" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="151" y="67" class="eyebrow">MORPHÉ</text>
+  <text x="1296" y="67" class="label" text-anchor="end">SYSTEM BLUEPRINT / 01</text>
+  <text x="64" y="137" font-size="44" font-weight="600" letter-spacing="-1.8">A correction becomes a reusable rule.</text>
+  <text x="66" y="176" font-size="18" fill="#64705f">A small scene contract connects language, editable motion and persistent intent.</text>
+
+  <!-- First row: intention becomes bounded data. -->
+  <rect class="card" x="64" y="226" width="352" height="164" rx="18"/>
+  <text x="89" y="259" class="label">01 / INTENT</text>
+  <text x="89" y="302" class="node-title">Describe the scene</text>
+  <text x="89" y="337" class="body">“A robot carries a box</text>
+  <text x="89" y="361" class="body">to the table and waves.”</text>
+
+  <path class="line" d="M428 309h63"/>
+  <rect class="card" x="504" y="226" width="352" height="164" rx="18"/>
+  <text x="529" y="259" class="label">02 / PLAN</text>
+  <text x="529" y="302" class="node-title">Interpret the prompt</text>
+  <text x="529" y="337" class="body">Bounded EN / FR grammar</text>
+  <text x="529" y="361" class="body">or optional server-side LLM</text>
+
+  <path class="line" d="M868 309h63"/>
+  <rect x="944" y="226" width="352" height="164" rx="18" fill="#e6eee2" stroke="#c4d3bd" stroke-width="1.4"/>
+  <text x="969" y="259" class="label">03 / VALIDATE</text>
+  <text x="969" y="302" class="node-title">A finite ScenePlan</text>
+  <text x="969" y="337" class="body">Actor · object · destination</text>
+  <text x="969" y="361" class="body">Color · distance · pace · wave</text>
+
+  <path class="line" d="M1120 402v50"/>
+
+  <!-- Second row follows the actual execution path from right to left. -->
+  <rect class="card" x="944" y="466" width="352" height="164" rx="18"/>
+  <text x="969" y="499" class="label">04 / CHOREOGRAPH</text>
+  <text x="969" y="542" class="node-title">Procedural motion</text>
+  <text x="969" y="577" class="body">Time → object + limb targets</text>
+  <text x="969" y="601" class="body">Apply the remembered rule</text>
+
+  <path class="line" d="M932 548h-63"/>
+  <rect class="card" x="504" y="466" width="352" height="164" rx="18"/>
+  <text x="529" y="499" class="label">05 / SOLVE</text>
+  <text x="529" y="542" class="node-title">StykAnimate IK</text>
+  <text x="529" y="577" class="body">Solve hands onto object grips</text>
+  <text x="529" y="601" class="body">Two supplied rig adapters</text>
+
+  <path class="line" d="M492 548h-63"/>
+  <rect class="card" x="64" y="466" width="352" height="164" rx="18"/>
+  <text x="89" y="499" class="label">06 / RENDER</text>
+  <text x="89" y="542" class="node-title">An editable SVG scene</text>
+  <text x="89" y="577" class="body">Play, scrub, correct, compare</text>
+  <text x="89" y="601" class="body">A live view of structured motion</text>
+
+  <!-- Feedback persists an explicit object constraint, not model weights. -->
+  <path d="M240 642v92q0 12 12 12h237" fill="none" stroke="#2d7165" stroke-width="1.8" marker-end="url(#teal-arrow)"/>
+  <text x="265" y="690" font-size="14" fill="#2d7165">Gesture or text</text>
+  <text x="265" y="712" font-size="14" font-weight="600" fill="#2d7165">Store a correction</text>
+  <rect x="504" y="692" width="792" height="108" rx="18" fill="#e2ede6" stroke="#bed1c4" stroke-width="1.4"/>
+  <circle cx="539" cy="726" r="6" fill="#2d7165"/>
+  <text x="558" y="731" font-size="20" font-weight="600" letter-spacing="-.3">Symbolic memory</text>
+  <text x="1270" y="730" class="label" text-anchor="end">BROWSER LOCALSTORAGE</text>
+  <text x="530" y="770" class="mono">carry → carried-object → targetAngle: 0</text>
+  <text x="1270" y="770" font-size="14" fill="#446356" text-anchor="end">Inspectable. Reusable. Resettable.</text>
+  <path d="M1236 680v-37" fill="none" stroke="#2d7165" stroke-width="1.8" stroke-dasharray="4 5" marker-end="url(#teal-arrow)"/>
+
+  <text x="64" y="837" font-size="13" fill="#6e786c">2D kinematic POC · two supported bodies · one orientation rule · no neural training</text>
+  <text x="1296" y="837" font-size="13" fill="#6e786c" text-anchor="end">morphe-motion-poc</text>
+</svg>
